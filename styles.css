@@ -1,11 +1,8 @@
-* {
-  border: 1px solid orange;
-}
-
 html, body {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
   margin: 0;
+  background-color: white;
 }
 
 header {
@@ -89,6 +86,7 @@ h2{
 
 .job-overview {
   width: 100%;
+  background-color: white;
 }
 
 .top-job-overview-right {
@@ -350,13 +348,15 @@ hr {
 
 @media (min-width: 700px) {
 
-  header {
+  /*header {
     margin-bottom: 30px;
-  }
+    background-color: white;
+  }*/
 
   .top-job-overview {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
   }
 
   h2 {
@@ -477,5 +477,105 @@ hr {
 
   .job-description-right-btns {
     margin: 0 5px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .info-graphics {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .info-circles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .circles-div {
+    display: flex;
+  }
+
+  .totals-btn-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .graph-and-btn {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .graph img{
+    height: 150px;
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+   .dont-display-at-large{
+    display: none;
+  }
+
+  .dont-display-until-large {
+    display: block;
+  }
+
+  .main-header-wrapper {
+    width: 90%;
+  }
+
+  .main-aside-wrapper {
+    width: 20%;
+    height: 100vh;
+    background-color: #354052;
+    color: #7d889a;
+  }
+
+  .profile-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic img {
+    margin: 25px auto 10px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+  }
+
+  .profile-pic p {
+    margin: 0 0 10px 0;
+    font-size: .9em;
+  }
+
+  .main {
+    padding-left: 10px;
+    /*display: flex;
+    flex-direction: column;*/
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li:hover {
+    color: white;
+  }
+
+  .admin {
+    padding-left: 10px;
+  }
+
+  .categories {
+    padding-left: 10px;
+  }
+
+  .social-buttons-wrapper {
+    padding: 0;
   }
 }
