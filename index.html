@@ -65,22 +65,20 @@
           </div>
         </div>
         <div class="top-job-overview-right">
-          <button type="button" class="open-indicator-btn"><div class="circle-small-green"></div>Open</button>
-          <button type="button" class="bookmark-edit-delete-btn"><img src="ic_bookmark_black_24px.svg" alt="Bookmark"></button>
-          <button type="button" class="bookmark-edit-delete-btn"><img src="ic_edit_black_24px.svg" alt="Edit"></button>
-          <button type="button" class="bookmark-edit-delete-btn"><img src="ic_delete_black_24px.svg" alt="Delete"></button>
-        </div>        
+          <button type="button" class="open-indicator-btn job-description-right-btns"><div class="circle-small-green"></div>Open</button>
+          <button type="button" class="bookmark-edit-delete-btn job-description-right-btns"><img src="ic_bookmark_black_24px.svg" alt="Bookmark"></button>
+          <button type="button" class="bookmark-edit-delete-btn job-description-right-btns"><img src="ic_edit_black_24px.svg" alt="Edit"></button>
+          <button type="button" class="bookmark-edit-delete-btn job-description-right-btns"><img src="ic_delete_black_24px.svg" alt="Delete"></button>
+        </div>
       </div>
-      <div class="dont-display-until-medium">
-        <ul>
-          <li>Summary</li>
-          <li>Applicants</li>
-          <li>Job Board</li>
-          <li>Interview</li>
-          <li>Activity</li>
-          <li>Broadcast</li>
-          <li>Notifications</li>
-        </ul>
+      <div class="dont-display-until-medium bottom-job-overview">
+        <p>Summary</p>
+        <p>Applicants</p>
+        <p>Job Board</p>
+        <p>Interview</p>
+        <p>Activity</p>
+        <p>Broadcast</p>
+        <p>Notifications</p>
       </div>
     </section>
     <section class="info-graphics">
@@ -186,34 +184,38 @@
         </div>
       </article>
       <section class="social-and-sharing">
-        <article class="social-buttons">
-          <button type="button" class='social-btn facebook-btn soft-corners'><span class="span-left"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1024px-F_icon.svg.png" alt="facebook icon"></span>Post to Facebook</button>
-          <button type="button" class='social-btn twitter-btn soft-corners'><span><img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/twitter-512.png" alt="twitter icon"></span>Tweet This Job</button>
-          <button type="button" class='social-btn linkedin-btn soft-corners'><span><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png" alt="linkedin icon"></span>Post to LinkedIn</button>
-        </article>
-        <article class="three-cards card-bottom-border">
-          <h3><img src="ic_link_black_24px.svg" alt="link icon">Link to this job</h3>
-          <p>Direct people to this page using our link:</p>
-          <div class="input-and-button">
-            <input type="text" placeholder="http://loremipsum.dol/sit amet..." class="input-fields soft-corners">
-            <button type="button" class="copy-button soft-corners">Copy</button>
-          </div>
-        </article>
-        <article class="three-cards card-bottom-border">
-          <h3><img src="ic_widgets_black_24px.svg" alt="widget icon">Use the Button Widget</h3>
-          <p>This widget embed the buttons for sharing the job for submitting a resume on your website.</p>
-          <div class="input-and-button">
-            <input type="text" placeholder="<script type='text/javascript's..." class="input-fields soft-corners">
-            <button type="button" class="copy-button soft-corners">Copy</button>
-          </div>
-        </article>
-        <article class="three-cards">
-          <h3><img src="ic_file_upload_black_24px.svg" alt="file upload" id="file upload icon"> Resumes by Email</h3>
-          <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
-          <div class="input-and-button soft-corners">
-            <input type="text" placeholder="devonbull@gmail.com" class="input-fields soft-corners">
-          </div>
-        </article>
+        <div class="social-buttons-wrapper">
+          <article class="social-buttons">
+            <button type="button" class='social-btn facebook-btn soft-corners'><span class="span-left"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1024px-F_icon.svg.png" alt="facebook icon"></span>Post to Facebook</button>
+            <button type="button" class='social-btn twitter-btn soft-corners'><span><img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/twitter-512.png" alt="twitter icon"></span>Tweet This Job</button>
+            <button type="button" class='social-btn linkedin-btn soft-corners'><span><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png" alt="linkedin icon"></span>Post to LinkedIn</button>
+          </article>
+        </div>
+        <div class="three-cards-wrapper">
+          <article class="three-cards card-bottom-border">
+            <h3><img src="ic_link_black_24px.svg" alt="link icon">Link to this job</h3>
+            <p>Direct people to this page using our link:</p>
+            <div class="input-and-button">
+              <input type="text" placeholder="http://loremipsum.dol/sit amet..." class="input-fields soft-corners">
+              <button type="button" class="copy-button soft-corners">Copy</button>
+            </div>
+          </article>
+          <article class="three-cards card-bottom-border">
+            <h3><img src="ic_widgets_black_24px.svg" alt="widget icon">Use the Button Widget</h3>
+            <p>This widget embed the buttons for sharing the job for submitting a resume on your website.</p>
+            <div class="input-and-button">
+              <input type="text" placeholder="<script type='text/javascript's..." class="input-fields soft-corners">
+              <button type="button" class="copy-button soft-corners">Copy</button>
+            </div>
+          </article>
+          <article class="three-cards">
+            <h3><img src="ic_file_upload_black_24px.svg" alt="file upload" id="file upload icon"> Resumes by Email</h3>
+            <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
+            <div class="input-and-button soft-corners">
+              <input type="text" placeholder="devonbull@gmail.com" class="input-fields soft-corners">
+            </div>
+          </article>
+        </div>
       </section>
     </section>
   </body>

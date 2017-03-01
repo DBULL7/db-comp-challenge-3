@@ -87,6 +87,10 @@ h2{
   color: #3BA9AF;
 }
 
+.job-overview {
+  width: 100%;
+}
+
 .top-job-overview-right {
   display: flex;
   justify-content: space-around;
@@ -258,6 +262,10 @@ hr {
   justify-content: flex-end;
 }
 
+.social-buttons-wrapper {
+  width: 100%;
+}
+
 .social-and-sharing {
   display: flex;
   flex-direction: column;
@@ -267,6 +275,7 @@ hr {
 .social-buttons {
   display: flex;
   flex-direction: column;
+
 }
 
 .social-btn {
@@ -340,6 +349,59 @@ hr {
 }
 
 @media (min-width: 700px) {
+
+  header {
+    margin-bottom: 30px;
+  }
+
+  .top-job-overview {
+    display: flex;
+    justify-content: center;
+  }
+
+  h2 {
+    margin: 5px 0;
+  }
+
+  .preview {
+    margin: 0;
+  }
+
+  .location-preview {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .location-name p{
+    margin: 0;
+  }
+
+  .location-name img {
+    height: 16px;
+  }
+
+  .open-indicator-btn {
+    margin-left: 20px;
+  }
+
+
+  .top-job-overview-right {
+    display: flex;
+    align-items: flex-start;
+    width: 40%;
+    justify-content: space-around;
+  }
+
+  .dont-display-until-medium {
+    display: block;
+  }
+
+  .bottom-job-overview {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+  }
+
   .info-circles {
     flex-direction: row;
     justify-content: space-around;
@@ -352,4 +414,68 @@ hr {
     width: 175px;
   }
 
+}
+
+@media (min-width: 900px) {
+  .job-description-and-sharing {
+    width: 100%;
+  }
+
+  .social-and-sharing {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .social-buttons-wrapper {
+
+  }
+
+  .three-cards-wrapper {
+
+  }
+
+  .social-buttons {
+
+    /*width: 70%;*/
+  }
+}
+
+@media (min-width: 1000px) {
+  .job-description-and-sharing {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .job-description {
+    width: 60%;
+  }
+
+  .social-and-sharing {
+    flex-direction: column;
+    width: 50%;
+    padding: 0 30px;
+  }
+
+  .social-buttons-wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .facebook-btn {
+    margin-top: 0;
+  }
+
+  .top-job-overview {
+    justify-content: space-between;
+  }
+
+  .top-job-overview-right {
+    justify-content: center;
+  }
+
+  .job-description-right-btns {
+    margin: 0 5px;
+  }
 }
