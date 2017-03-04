@@ -35,10 +35,7 @@ header {
   width: 45px;
 }
 
-.left-border {
-  /*border-left: 1px solid gray;
-  border-right: none;*/
-}
+
 
 .header-button:hover {
   background-color: #1E90FF;
@@ -47,7 +44,7 @@ header {
 
 .search-bar {
   border: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #d9e3e8;
   font-size: 1.2em;
 }
 
@@ -118,7 +115,7 @@ h2{
   justify-content: space-around;
   align-items: center;
   border-radius: 20px;
-  border: 2px solid gray;
+  border: 2px solid #d9e3e8;
   background-color: white;
 }
 
@@ -126,7 +123,7 @@ h2{
   display: flex;
   align-items: center;
   border-radius: 50%;
-  border: 2px solid gray;
+  border: 2px solid #d9e3e8;
   background-color: white;
 }
 
@@ -161,17 +158,17 @@ h2{
 
 .green-infographic {
   border: 12px solid green;
-  border-right-color: gray;
+  border-right-color: #d9e3e8;
 }
 
 .blue-infographic {
   border: 5px solid blue;
-  border-right-color: gray;
+  border-right-color: #d9e3e8;
 }
 
 .purple-infographic {
   border: 5px solid purple;
-  border-right-color: gray;
+  border-right-color: #d9e3e8;
 }
 
 .inside-circle {
@@ -348,6 +345,24 @@ hr {
   margin: 10px 0;
 }
 
+#admin-checkbox {
+  background-color: #fcd212;
+}
+
+#design-checkbox {
+  background-color: #24affe;
+}
+
+
+#exec-checkbox {
+  background-color: #e61960;
+}
+
+#hr-checkbox {
+  background-color: #00af8a;
+}
+
+
 @media (min-width: 500px) {
   .dont-display {
     display: block;
@@ -488,21 +503,30 @@ hr {
   }
 }*/
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   header {
     height: 50px;
   }
 
   .header-button {
     width: 70px;
-    border-right: 1px solid gray;
+    border-right: 1px solid #d9e3e8;
     border-top: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #d9e3e8;
   }
 
   .header-button img {
     width: 25px;
     height: 25px;
+  }
+
+  .left-border {
+    border-left: 1px solid #d9e3e8;
+  }
+
+  #search-icon {
+    border-right: none;
+    padding-right: 0;
   }
 
   .info-graphics {
