@@ -1,6 +1,14 @@
-html, body {
-  display: flex;
+* {
+  border: 1px solid orange;
+}
+
+html {
   height: 100vh;
+}
+
+body {
+  display: flex;
+  height: 100%;
   margin: 0;
   background-color: white;
 }
@@ -152,7 +160,7 @@ h2{
 }
 
 .green-infographic {
-  border: 5px solid green;
+  border: 12px solid green;
   border-right-color: gray;
 }
 
@@ -416,7 +424,7 @@ hr {
 
 }
 
-@media (min-width: 900px) {
+/*@media (min-width: 900px) {
   .job-description-and-sharing {
     width: 100%;
   }
@@ -438,10 +446,10 @@ hr {
   .social-buttons {
 
     /*width: 70%;*/
-  }
-}
+  /*}
+/*}*//*/
 
-@media (min-width: 1000px) {
+/*@media (min-width: 1000px) {
   .job-description-and-sharing {
     flex-direction: row;
     align-items: flex-start;
@@ -478,9 +486,25 @@ hr {
   .job-description-right-btns {
     margin: 0 5px;
   }
-}
+}*/
 
 @media (min-width: 1100px) {
+  header {
+    height: 50px;
+  }
+
+  .header-button {
+    width: 70px;
+    border-right: 1px solid gray;
+    border-top: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .header-button img {
+    width: 25px;
+    height: 25px;
+  }
+
   .info-graphics {
     display: flex;
     flex-direction: row;
@@ -524,13 +548,18 @@ hr {
 
   .main-header-wrapper {
     width: 90%;
+    overflow: scroll;
   }
 
   .main-aside-wrapper {
-    width: 20%;
-    height: 100vh;
+    width: 220px;
+    height: 100%;
     background-color: #354052;
     color: #7d889a;
+  }
+
+  aside {
+    height: 100%;
   }
 
   .profile-pic {
