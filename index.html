@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Rockstar Challenge</title>
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -14,45 +14,48 @@
           <img src="profile_pic.jpg" alt="profile picture">
           <p>Devon Bull</p>
         </div>
-        <div class="main">
+        <hr>
+        <div class="main padding-left-side">
           <p>Main</p>
-          <ul>
-            <li><img src="home_white.svg" alt="Home icon">HOME</li>
-            <li><img src="jobs.svg" alt="Jobs icon">JOBS</li>
-            <li><img src="description.svg" alt="Resumes icon">RESUMES</li>
-            <li><img src="tasks.svg" alt="Tasks icon">TASKS</li>
-            <li><img src="calender.svg" alt="Calender icon">CALENDER</li>
+          <ul class="aside-ul">
+            <a><img src="icons/home_white.svg" alt="Home icon">HOME</a>
+            <a><img src="icons/jobs.svg" alt="Jobs icon">JOBS</a>
+            <a><img src="icons/description.svg" alt="Resumes icon">RESUMES</a>
+            <a><img src="icons/tasks.svg" alt="Tasks icon">TASKS</a>
+            <a><img src="icons/calender-nav.svg" alt="Calender icon">CALENDER</a>
           </ul>
         </div>
-        <div class="admin">
+        <hr>
+        <div class="admin padding-left-side">
           <p>Admin</p>
-          <ul>
-            <li><img src="users.svg" alt="users icon">USERS</li>
-            <li><img src="location.svg" alt="location icon">LOCATIONS</li>
-            <li><img src="workflow.svg" alt="workflow icon">WORKFLOWS</li>
-            <li><img src="job_board.svg" alt="jobs board icon">JOB BOARDS</li>
-            <li><img src="social.svg" alt="social icon">SOCIAL</li>
+          <ul class="aside-ul">
+            <a><img src="icons/users.svg" alt="users icon">USERS</a>
+            <a><img src="icons/location-nav.svg" alt="location icon">LOCATIONS</a>
+            <a><img src="icons/workflow.svg" alt="workflow icon">WORKFLOWS</a>
+            <a><img src="icons/job_board.svg" alt="jobs board icon">JOB BOARDS</a>
+            <a><img src="icons/social.svg" alt="social icon">SOCIAL</a>
           </ul>
         </div>
-        <div class="categories">
+        <hr>
+        <div class="categories padding-left-side">
           <p>Categories</p>
-          <ul>
-            <li><input type="checkbox" id="admin-checkbox">Administrative</li>
-            <li><input type="checkbox" id="design-checkbox">Design</li>
-            <li><input type="checkbox" id="exec-checkbox">Executive</li>
-            <li><input type="checkbox" id="hr-checkbox">Human Resources</li>
+          <ul class="aside-ul">
+            <a><input type="checkbox" id="admin-checkbox">Administrative</a>
+            <a><input type="checkbox" id="design-checkbox">Design</a>
+            <a><input type="checkbox" id="exec-checkbox">Executive</a>
+            <a><input type="checkbox" id="hr-checkbox">Human Resources</a>
           </ul>
         </div>
       </aside>
     </div>
     <div class="main-header-wrapper">
       <header>
-        <button type="button" class="header-button"><img src="ic_menu_black_24px.svg" alt="menu"></button>
-        <button type="button" class="header-button dont-display" id="search-icon"><img src="ic_search_black_24px.svg" alt="search"></button>
+        <button type="button" class="header-button"><img src="icons/hamberger_menu.svg" alt="menu"></button>
+        <button type="button" class="header-button dont-display" id="search-icon"><img src="icons/search_icon.svg" alt="search"></button>
         <input type="text" class="search-bar dont-display" placeholder="Search for a job, task or resume">
-        <button type="button" class="header-button dont-display left-border"><img src="ic_person_add_black_24px.svg" alt="Add Person"></button>
-        <button type="button" class="header-button dont-display"><img src="calender.svg" alt="Events"></button>
-        <button type="button" class="header-button"><img src="grid-menu.svg" alt="menu"></button>
+        <button type="button" class="header-button dont-display left-border"><img src="icons/person_add.svg" alt="Add Person"></button>
+        <button type="button" class="header-button dont-display"><img src="icons/calender.svg" alt="Events"></button>
+        <button type="button" class="header-button"><img src="icons/grid-menu.svg" alt="menu"></button>
       </header>
       <section class="job-overview">
         <div class="top-job-overview">
@@ -60,7 +63,7 @@
             <h2>Customer Service Respresentative</h2>
             <div class="location-preview">
               <div class="location-name">
-                <img src="location.svg" alt="location">
+                <img src="icons/location.svg" alt="location">
                 <p>San Francisco, CA</p>
               </div>
               <div class="circle-small"></div>
@@ -69,19 +72,21 @@
           </div>
           <div class="top-job-overview-right">
             <button type="button" class="open-indicator-btn job-description-right-btns"><div class="circle-small-green"></div>Open</button>
-            <button type="button" class="bookmark-edit-delete-btn job-description-right-btns"><img src="ic_bookmark_black_24px.svg" alt="Bookmark"></button>
-            <button type="button" class="bookmark-edit-delete-btn job-description-right-btns"><img src="ic_edit_black_24px.svg" alt="Edit"></button>
-            <button type="button" class="bookmark-edit-delete-btn job-description-right-btns"><img src="ic_delete_black_24px.svg" alt="Delete"></button>
+            <button type="button" class="bookmark-edit-delete-btn job-description-right-btns"><img src="icons/bookmark_black.svg" alt="Bookmark"></button>
+            <button type="button" class="bookmark-edit-delete-btn job-description-right-btns"><img src="icons/edit_black.svg" alt="Edit"></button>
+            <button type="button" class="bookmark-edit-delete-btn job-description-right-btns"><img src="icons/delete.svg" alt="Delete"></button>
           </div>
         </div>
         <div class="dont-display-until-medium bottom-job-overview">
-          <p>Summary</p>
-          <p>Applicants</p>
-          <p>Job Board</p>
-          <p>Interview</p>
-          <p>Activity</p>
-          <p>Broadcast</p>
-          <p>Notifications</p>
+          <ul>
+            <li class="section-hover">Summary</li>
+            <li class="section-hover">Applicants</li>
+            <li class="section-hover">Job Board</li>
+            <li class="section-hover">Interview</li>
+            <li class="section-hover">Activity</li>
+            <li class="section-hover">Broadcast</li>
+            <li class="section-hover">Notifications</li>
+          </ul>
         </div>
       </section>
       <section class="info-graphics">
@@ -112,13 +117,13 @@
             <button type="button" class="applicants-per-day">Applicants/Day</button>
           </article>
         </div>
-        <hr class="dont-display-at-large">
       </section>
+      <hr id="graphics-vs-social-seperator">
       <section class="job-description-and-sharing">
         <article class="job-description">
           <div class="job-description-header">
             <h4>Job Description</h4>
-            <button type="button" class="edit-btn"><img src="ic_edit_black_24px.svg" alt="">Edit</button>
+            <button type="button" class="edit-btn"><img src="icons/edit_white.svg" alt="">Edit</button>
           </div>
           <div class="job-description-row">
             <div class="job-description-left">
@@ -176,7 +181,7 @@
           <hr>
           <div class="job-description-row">
             <div class="job-description-description-row">
-              <h5>Description</h5>
+              <h5 class="description-align">Description</h5>
             </div>
             <div class="job-description-right">
               <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping-up-to-date on the various product shizzle, helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
@@ -211,7 +216,7 @@
           </div>
           <div class="three-cards-wrapper">
             <article class="three-cards card-bottom-border">
-              <h3><img src="ic_link_black_24px.svg" alt="link icon">Link to this job</h3>
+              <h3><img src="icons/link.svg" alt="link icon">Link to this job</h3>
               <p>Direct people to this page using our link:</p>
               <div class="input-and-button">
                 <input type="text" placeholder="http://loremipsum.dol/sit amet..." class="input-fields soft-corners">
@@ -219,7 +224,7 @@
               </div>
             </article>
             <article class="three-cards card-bottom-border">
-              <h3><img src="ic_widgets_black_24px.svg" alt="widget icon">Use the Button Widget</h3>
+              <h3><img src="icons/widgets.svg" alt="widget icon">Use the Button Widget</h3>
               <p>This widget embed the buttons for sharing the job for submitting a resume on your website.</p>
               <div class="input-and-button">
                 <input type="text" placeholder="<script type='text/javascript's..." class="input-fields soft-corners">
@@ -227,7 +232,7 @@
                 </div>
               </article>
               <article class="three-cards">
-                <h3><img src="ic_file_upload_black_24px.svg" alt="file upload" id="file upload icon"> Resumes by Email</h3>
+                <h3><img src="icons/file_upload.svg" alt="file upload" id="file upload icon"> Resumes by Email</h3>
                 <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
                 <div class="input-and-button soft-corners">
                   <input type="text" placeholder="devonbull@gmail.com" class="input-fields soft-corners">
