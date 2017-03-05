@@ -66,11 +66,12 @@ input {
 
 h2{
   text-align: center;
+  margin: 10px;
 }
 
 .location-preview {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-size: 14px;
 }
@@ -653,6 +654,52 @@ hr {
   }
 }*/
 
+@media (min-width: 800px) {
+  .job-description-and-sharing {
+    flex-direction: row;
+  }
+
+  .job-description-and-sharing {
+    align-items: flex-start;
+    padding: 25px;
+  }
+
+  .job-description {
+    width: 85%;
+  }
+
+  .social-and-sharing {
+    width: 66%;
+    padding-left: 40px;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .facebook-btn {
+    margin-top: 0;
+  }
+
+  .top-job-overview {
+    justify-content: space-between;
+  }
+
+  .top-job-overview-right {
+    justify-content: flex-end;
+  }
+
+  .job-description-right-btns {
+    margin-right: 12px;
+  }
+
+  .input-and-button {
+    padding-bottom: 24px;
+  }
+
+  .top-job-overview-left {
+    padding-left: 20px;
+  }
+}
+
 @media (min-width: 1000px) {
   header {
     height: 50px;
@@ -684,6 +731,10 @@ hr {
 
   .job-description-right-btns {
     margin-right: 12px;
+  }
+
+  .totals {
+    width: 69%;
   }
 
   .info-graphics {
@@ -853,5 +904,9 @@ hr {
 
   .social-buttons-wrapper {
     padding: 0;
+  }
+
+  .input-and-button {
+    padding-bottom: 15px;
   }
 }
