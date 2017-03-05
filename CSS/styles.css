@@ -72,6 +72,7 @@ h2{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 14px;
 }
 
 .location-name {
@@ -83,6 +84,7 @@ h2{
   height: 3px;
   width: 3px;
   background-color: gray;
+  margin: 0 10px;
 }
 
 .preview {
@@ -128,16 +130,13 @@ h2{
   background-color: white;
 }
 
-.top-job-overview-left {
-  padding-left: 20px;
-}
-
 .info-graphics {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   background-color: #edf2f6;
+  padding: 30px 0;
 }
 
 .circles-wrapper {
@@ -148,6 +147,7 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .graphic-circle {
@@ -186,8 +186,7 @@ h2{
 
 .totals {
   margin: 0 auto;
-  font-size: .8em;
-  width: 60%;
+  width: 100%;
   border-radius: 20px;
   border: 2px solid gray;
   background-color: white;
@@ -201,7 +200,8 @@ h2{
 }
 
 .graph img {
-  width: 100%;
+  width: 90%;
+  margin-bottom:20px;
 }
 
 .applicants-per-day {
@@ -223,13 +223,14 @@ hr {
   flex-direction: column;
   align-items: center;
   background-color: #edf2f6;
+  padding: 10px;
 }
 
 .job-description-header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
-  padding-left: 15px;
+  /*padding-left: 15px;*/
   background-color: #6f7e95;
   color: white;
 }
@@ -274,6 +275,11 @@ hr {
   justify-content: flex-end;
 }
 
+.totals-btn-div {
+  display: flex;
+  justify-content: center;
+}
+
 .social-buttons-wrapper {
   width: 100%;
 }
@@ -281,7 +287,7 @@ hr {
 .social-and-sharing {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
 }
 
 .social-buttons {
@@ -348,7 +354,7 @@ hr {
 }
 
 .card-bottom-border {
-  border-bottom: 2px solid gray;
+  border-bottom: 3px solid #e0e5eb;
 }
 
 #totals-btn {
@@ -376,12 +382,62 @@ hr {
   background-color: #00af8a;
 }
 
+#graphics-vs-social-seperator {
+  margin: 0;
+  border: none;
+  height: 3px;
+  background-color: #e0e5e9;
+}
+
+.align-icons {
+  display: flex;
+  align-items: center;
+}
+
+.align-icons img {
+  padding-right: 6px;
+}
+
+.job-description-right-btns {
+  height: 35px;
+}
+
+.bottom-job-overview ul {
+  color: #a9aaae;
+}
 
 @media (min-width: 500px) {
   .dont-display {
     display: block;
   }
+
+  .header-button {
+    width: 20%;
+  }
+
+  .header-button img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .circles-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .graphic-circle {
+    height: 130px;
+    width: 130px;
+  }
+
+  .location-preview {
+    justify-content: center;
+  }
 }
+
 
 @media (min-width: 700px) {
 
@@ -410,6 +466,8 @@ hr {
 
   ul {
     margin-bottom: 0;
+    list-style-type: none;
+    padding: 0;
   }
 
   li {
@@ -419,6 +477,7 @@ hr {
   li:hover {
     padding-bottom: 9px;
     border-bottom: 3px solid #32acf8;
+    color: #000;
   }
 
   h2 {
@@ -428,11 +487,20 @@ hr {
   .preview {
     margin: 0;
   }
-/*
+
+  .graph-and-btn {
+    padding-top: 15px;
+    padding-right: 25px;
+  }
+
+  .social-and-sharing {
+    width: 100%;
+    padding-top: 15px;
+  }
+
   .location-preview {
-    align-items: flex-start;
     justify-content: center;
-  }*/
+  }
 
   .location-name p{
     margin: 0;
@@ -446,6 +514,9 @@ hr {
     margin-left: 20px;
   }
 
+  .top-job-overview {
+    justify-content: space-around;
+  }
 
   .top-job-overview-right {
     display: flex;
@@ -465,11 +536,15 @@ hr {
   }
 
   .info-graphics {
+    height: 26%;
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .circles-div {
     display: flex;
+    justify-content: space-around;
+    width: 100%;
   }
 
   .info-circles {
@@ -478,10 +553,38 @@ hr {
     padding: 15px 0;
   }
 
+  .circles-wrapper {
+    width: 62%;
+  }
+
   .graphic-circle {
     margin-bottom: 0;
-    height: 125px;
-    width: 125px;
+    height: 110px;
+    width: 110px;
+  }
+
+  .graph img {
+    width: 245px;
+    height: 132px;
+    margin-bottom: 17px;
+  }
+
+  .applicants-per-day {
+    /*margin-top: 40px;*/
+  }
+
+  .totals-btn-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .job-description-and-sharing {
+    padding: 20px;
+  }
+
+  .job-description-header {
+    justify-content: flex-start;
+    padding-left: 20px;
   }
 
 }
@@ -631,12 +734,12 @@ hr {
     margin-bottom: 12px;
   }
 
-  #graphics-vs-social-seperator {
+  /*#graphics-vs-social-seperator {
     margin: 0;
     border: none;
     height: 3px;
     background-color: #e0e5e9;
-  }
+  }*/
 
   .job-description-and-sharing {
     align-items: flex-start;
