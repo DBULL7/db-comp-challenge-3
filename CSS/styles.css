@@ -6,7 +6,7 @@ body {
   display: flex;
   height: 100%;
   margin: 0;
-  background-color: white;
+  background-color: #FFF;
 }
 
 header {
@@ -25,9 +25,6 @@ header {
   justify-content: center;
   background-color: #FFF;
   border: none;
-  /*border-right: 1px solid gray;
-  border-top: none;
-  border-bottom: 1px solid gray;*/
 }
 
 .header-button img {
@@ -83,7 +80,7 @@ h2{
   border-radius: 50%;
   height: 3px;
   width: 3px;
-  background-color: gray;
+  background-color: #6f7e95;
   margin: 0 10px;
 }
 
@@ -97,7 +94,7 @@ h2{
 
 .job-overview {
   width: 100%;
-  background-color: white;
+  background-color: #FFF;
 }
 
 .top-job-overview-right {
@@ -122,7 +119,7 @@ h2{
   align-items: center;
   border-radius: 20px;
   border: 2px solid #d9e3e8;
-  background-color: white;
+  background-color: #FFF;
   color: #7d889a;
 }
 
@@ -131,7 +128,7 @@ h2{
   align-items: center;
   border-radius: 50%;
   border: 2px solid #d9e3e8;
-  background-color: white;
+  background-color: #FFF;
 }
 
 .info-graphics {
@@ -237,7 +234,7 @@ hr {
 }
 
 .job-description {
-  background-color: white;
+  background-color: #FFF;
 }
 
 .job-description-and-sharing {
@@ -254,7 +251,7 @@ hr {
   align-items: center;
   /*padding-left: 15px;*/
   background-color: #6f7e95;
-  color: white;
+  color: #FFF;
 }
 
 .edit-btn {
@@ -262,7 +259,7 @@ hr {
   align-items: center;
   height: 40%;
   background-color: #7e8ba7;
-  color: white;
+  color: #FFF;
   margin-left: 20px;
   border: 0;
 }
@@ -328,7 +325,7 @@ hr {
   align-items: center;
   justify-content: center;*/
   height: 45px;
-  color: white;
+  color: #FFF;
   margin: 10px 0;
   border: 0;
 }
@@ -372,7 +369,7 @@ hr {
   width: 27%;
   border: none;
   background-color: #47bcc3;
-  color: white;
+  color: #FFF;
 }
 
 .soft-corners {
@@ -472,11 +469,6 @@ hr {
 
 
 @media (min-width: 700px) {
-
-  /*header {
-    margin-bottom: 30px;
-    background-color: white;
-  }*/
   header {
     height: 52px;
   }
@@ -929,9 +921,7 @@ hr {
     height: 16px;
     margin-right: 10px;
   }
-  /*li:hover {
-    color: white;
-  }*/
+
   .main-aside-wrapper hr {
     border: none;
     height: 3px;
