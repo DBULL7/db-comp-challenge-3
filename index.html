@@ -16,41 +16,41 @@
         </div>
         <hr>
         <div class="main padding-left-side">
-          <p>Main</p>
-          <ul class="aside-ul">
+          <p class="section-name">Main</p>
+          <div class="aside-ul">
             <a><img src="icons/home_white.svg" alt="Home icon">HOME</a>
             <a><img src="icons/jobs.svg" alt="Jobs icon">JOBS</a>
             <a><img src="icons/description.svg" alt="Resumes icon">RESUMES</a>
             <a><img src="icons/tasks.svg" alt="Tasks icon">TASKS</a>
             <a><img src="icons/calender-nav.svg" alt="Calender icon">CALENDER</a>
-          </ul>
+          </div>
         </div>
         <hr>
         <div class="admin padding-left-side">
-          <p>Admin</p>
-          <ul class="aside-ul">
+          <p class="section-name">Admin</p>
+          <div class="aside-ul">
             <a><img src="icons/users.svg" alt="users icon">USERS</a>
             <a><img src="icons/location-nav.svg" alt="location icon">LOCATIONS</a>
             <a><img src="icons/workflow.svg" alt="workflow icon">WORKFLOWS</a>
             <a><img src="icons/job_board.svg" alt="jobs board icon">JOB BOARDS</a>
             <a><img src="icons/social.svg" alt="social icon">SOCIAL</a>
-          </ul>
+          </div>
         </div>
         <hr>
         <div class="categories padding-left-side">
-          <p>Categories</p>
-          <ul class="aside-ul">
-            <a><input type="checkbox" id="admin-checkbox">Administrative</a>
-            <a><input type="checkbox" id="design-checkbox">Design</a>
-            <a><input type="checkbox" id="exec-checkbox">Executive</a>
-            <a><input type="checkbox" id="hr-checkbox">Human Resources</a>
-          </ul>
+          <p class="section-name">Categories</p>
+          <div class="aside-ul">
+            <a><div class="small-square yellow-square"></div>Administrative</a>
+            <a><div class="small-square blue-square"></div>Design</a>
+            <a><div class="small-square red-square"></div>Executive</a>
+            <a><div class="small-square green-square"></div>Human Resources</a>
+          </div>
         </div>
       </aside>
     </div>
     <div class="main-header-wrapper">
       <header>
-        <button type="button" class="header-button"><img src="icons/hamberger_menu.svg" alt="menu"></button>
+        <button type="button" class="header-button" id="hamberger"><img src="icons/hamberger_menu.svg" alt="menu"></button>
         <button type="button" class="header-button dont-display" id="search-icon"><img src="icons/search_icon.svg" alt="search"></button>
         <input type="text" class="search-bar dont-display-until-medium" placeholder="Search for a job, task or resume">
         <button type="button" class="header-button dont-display left-border"><img src="icons/person_add.svg" alt="Add Person"></button>
@@ -79,7 +79,7 @@
         </div>
         <div class="dont-display-until-medium bottom-job-overview">
           <ul>
-            <li class="section-hover">Summary</li>
+            <li class="section-hover" id="active-state">Summary</li>
             <li class="section-hover">Applicants</li>
             <li class="section-hover">Job Board</li>
             <li class="section-hover">Interview</li>
@@ -183,7 +183,7 @@
             <div class="job-description-description-row">
               <h5 class="description-align">Description</h5>
             </div>
-            <div class="job-description-right">
+            <div class="job-description-right fixing-text">
               <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping-up-to-date on the various product shizzle, helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
             </div>
           </div>
