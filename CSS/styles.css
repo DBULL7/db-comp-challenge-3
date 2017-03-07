@@ -249,7 +249,6 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /*padding-left: 15px;*/
   background-color: #6f7e95;
   color: #FFF;
 }
@@ -272,7 +271,7 @@ hr {
 .job-description-row {
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 25px;
 }
 
 .job-description-row p {
@@ -286,6 +285,7 @@ hr {
   border-radius: 50%;
   width: 25px;
   height: 25px;
+  margin-right: 10px;
 }
 
 .job-description-description-row {
@@ -317,13 +317,9 @@ hr {
 .social-buttons {
   display: flex;
   flex-direction: column;
-
 }
 
 .social-btn {
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
   height: 45px;
   color: #FFF;
   margin: 10px 0;
@@ -347,10 +343,6 @@ hr {
 
 .linkedin-btn {
   background-color: #007bb5;
-}
-
-.three-cards {
-  padding: 18px 0;
 }
 
 .input-and-button {
@@ -435,6 +427,17 @@ hr {
   border: 2px solid #16a4fa;
 }
 
+#top-position-title {
+  margin-top: 8px;
+}
+
+.job-description-hr {
+  border: none;
+  height: 2px;
+  background-color: #f4f4f4;
+  width: 90%;
+}
+
 @media (min-width: 500px) {
   .dont-display {
     display: block;
@@ -468,7 +471,7 @@ hr {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 720px) {
   header {
     height: 52px;
   }
@@ -599,10 +602,6 @@ hr {
     margin-bottom: 17px;
   }
 
-  .applicants-per-day {
-    /*margin-top: 40px;*/
-  }
-
   .totals-btn-div {
     display: flex;
     justify-content: center;
@@ -731,10 +730,6 @@ hr {
     font-size: 14px;
     margin-bottom: 8px;
   }
-
-  .three-cards {
-    padding: 11px 0;
-  }
 }
 
 @media (min-width: 1000px) {
@@ -823,13 +818,6 @@ hr {
     margin-bottom: 12px;
   }
 
-  /*#graphics-vs-social-seperator {
-    margin: 0;
-    border: none;
-    height: 3px;
-    background-color: #e0e5e9;
-  }*/
-
   .job-description-and-sharing {
     align-items: flex-start;
     padding: 25px;
@@ -894,10 +882,6 @@ hr {
     font-size: .9em;
   }
 
-  .padding-left-side {
-    padding-left: 18px;
-  }
-
   .aside-links {
     display: flex;
     flex-direction: column;
@@ -924,14 +908,6 @@ hr {
     border: none;
     height: 3px;
     background-color: #2e394b;
-  }
-
-  .admin {
-    padding-left: 10px;
-  }
-
-  .categories {
-    padding-left: 10px;
   }
 
   .social-buttons-wrapper {
@@ -963,7 +939,16 @@ hr {
     background-color: #f9e104;
   }
 
+  .padding-left-side p {
+    padding-left: 18px;
+  }
+
+  a {
+    padding-left: 18px;
+  }
+
   a:hover {
     color: #FFF;
+    background-color: #30394a;
   }
 }
