@@ -434,6 +434,10 @@ hr {
   width: 90%;
 }
 
+.main-header-wrapper {
+  height: 100%;
+}
+
 @media (min-width: 500px) {
   .dont-display {
     display: block;
